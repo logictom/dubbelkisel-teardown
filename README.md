@@ -5,7 +5,7 @@ Teardown of the IKEA DUBBELKISEL.
 > [!NOTE]
 > **Work in progress.** These findings come from hands-on work with a real device and may change as the teardown continues. The documentation is written with help from [Claude](https://claude.com/claude-code).
 
-<!-- TODO: hero photo, e.g. ![DUBBELKISEL](images/overview.jpg) -->
+![DUBBELKISEL PCB, top side](images/pcb-top.jpg)
 
 ## Status
 
@@ -19,7 +19,6 @@ Teardown of the IKEA DUBBELKISEL.
 
 - Exact SoC part
 - Firmware dump
-- Photos
 - Output voltage and dimming method
 
 ## Key findings
