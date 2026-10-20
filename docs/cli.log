@@ -1,0 +1,58 @@
+matterCli> 
+matterCli> help
+  exit            Exit the shell application
+  help            List out all top level commands
+  version         Output the software version
+  ble             Bluetooth LE commands
+  config          Manage device configuration. Usage to dump value: config [param_name] and to set some values (discriminator): config [param_name] [param_value].
+  device          Device management commands
+  onboardingcodes Dump device onboarding codes. Usage: onboardingcodes none|softap|ble|onnetwork [qrcode|qrcodeurl|manualpairingcode]
+  dns             DNS client commands
+  ota             OTA commands
+  stat            Statistics commands
+  echo            Echo back provided inputs
+  log             Logging utilities
+  rand            Random number utilities
+  otcli           Dispatch OpenThread CLI command
+  silabs          Dispatch Silicon Labs CLI command
+  tracing         Dispatch Silicon Labs Tracing command
+Done
+matterCli> version
+CHIP 0.0.0
+Done
+matterCli> config
+VendorId:        4476 (0x117C)
+ProductId:       36891 (0x901B)
+HardwareVersion: 2 (0x2)
+Error config: Error CHIP:0x0000002D
+matterCli> device
+  factoryreset    Performs device factory reset
+Done
+matterCli> stat
+  peak            Print peak usage of system resources
+  reset           Reset peak usage of system resources
+Done
+matterCli> otcli
+Error otcli: Error CHIP:0x0000002F
+matterCli> silabs
+Error silabs: Error CHIP:0x0000002F
+matterCli> tracing
+  help            Output the help menu
+  list            List all available TimeTraceOperations
+  watermarks      Display runtime watermarks. Usage: watermarks <TimeTraceOperation>
+  flush           Display buffered traces. Usage: flush <TimeTraceOperation>
+Done
+matterCli> ble
+  adv             Manage BLE advertising. Usage: ble adv <start|stop|state>
+Done
+matterCli> 
+matterCli> stat peak
+Packet Buffers: 3
+Timers: 7
+TCP endpoints: 0
+UDP endpoints: 1
+Exchange contexts: 2
+Unsolicited message handlers: 4
+Platform events: 0
+Heap allocated bytes: 34960
+Done
